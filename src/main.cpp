@@ -15,14 +15,14 @@
 
 #define BUTTON 33
 
-const char *ssid = "VM8467663";
-const char *password = "vcV3mqhZse7ctooc";
+const char *ssid = "SSID";
+const char *password = "Password";
 
 // NOTE : Set time zone here (https://timeapi.io/api/timezone/availabletimezones)
 String timeApi = "https://timeapi.io/api/time/current/zone?timeZone=Europe%2FLondon";
 
 // NOTE : Set lat, lon and API key here (https://home.openweathermap.org/api_keys)
-const char *weatherApi = "https://api.openweathermap.org/data/2.5/weather?lat=51.653625&lon=-0.27329490&appid=e26d432445d40721d0a2844ef048feea&units=metric";
+const char *weatherApi = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric";
 
 struct Alarm {
   bool silenced;
